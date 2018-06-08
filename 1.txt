@@ -1,0 +1,139 @@
+
+Sai Krishna@PC-Saikrishna-1720 MINGW64 ~/Desktop/mydirectory/Third (master)
+$ pwd
+/c/Users/Sai Krishna/Desktop/mydirectory/Third
+
+Sai Krishna@PC-Saikrishna-1720 MINGW64 ~/Desktop/mydirectory/Third (master)
+$ cd
+
+Sai Krishna@PC-Saikrishna-1720 MINGW64 ~ (master)
+$ pwd
+/c/Users/Sai Krishna
+
+Sai Krishna@PC-Saikrishna-1720 MINGW64 ~ (master)
+$ cd D
+bash: cd: D: No such file or directory
+
+Sai Krishna@PC-Saikrishna-1720 MINGW64 ~ (master)
+$ cd D:
+
+Sai Krishna@PC-Saikrishna-1720 MINGW64 /d
+$ pwd
+/d
+
+Sai Krishna@PC-Saikrishna-1720 MINGW64 /d
+$ ls
+'$RECYCLE.BIN'/   git/   hello-world/  'System Volume Information'/
+
+Sai Krishna@PC-Saikrishna-1720 MINGW64 /d
+$ cd hello-world/
+
+Sai Krishna@PC-Saikrishna-1720 MINGW64 /d/hello-world (master)
+$ ls
+hello.py  README.md
+
+Sai Krishna@PC-Saikrishna-1720 MINGW64 /d/hello-world (master)
+$ cp hello.py ../
+$RECYCLE.BIN/              hello-world/
+git/                       System Volume Information/
+
+Sai Krishna@PC-Saikrishna-1720 MINGW64 /d/hello-world (master)
+$ cp hello.py ../../dev/
+clipboard  dsp        mqueue/    random     sda3       stdout     windows
+conin      fd/        null       sda        shm/       tty        zero
+conout     full       ptmx       sda1       stderr     ttyS0
+console    kmsg       pty0       sda2       stdin      urandom
+
+Sai Krishna@PC-Saikrishna-1720 MINGW64 /d/hello-world (master)
+$ cp hello.py
+.git/      hello.py   README.md
+
+Sai Krishna@PC-Saikrishna-1720 MINGW64 /d/hello-world (master)
+$ cp hello.py
+.git/      hello.py   README.md
+
+Sai Krishna@PC-Saikrishna-1720 MINGW64 /d/hello-world (master)
+$ pwd
+/d/hello-world
+
+Sai Krishna@PC-Saikrishna-1720 MINGW64 /d/hello-world (master)
+$ cd
+
+Sai Krishna@PC-Saikrishna-1720 MINGW64 ~ (master)
+$
+
+Sai Krishna@PC-Saikrishna-1720 MINGW64 ~ (master)
+$ cd Desktop/mydirectory/Third/
+
+Sai Krishna@PC-Saikrishna-1720 MINGW64 ~/Desktop/mydirectory/Third (master)
+$ cp /d/hello-world/hello.py .
+
+Sai Krishna@PC-Saikrishna-1720 MINGW64 ~/Desktop/mydirectory/Third (master)
+$ ls
+hello.py
+
+Sai Krishna@PC-Saikrishna-1720 MINGW64 ~/Desktop/mydirectory/Third (master)
+$ ls -a
+./  ../  .git/  hello.py
+
+Sai Krishna@PC-Saikrishna-1720 MINGW64 ~/Desktop/mydirectory/Third (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        hello.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Sai Krishna@PC-Saikrishna-1720 MINGW64 ~/Desktop/mydirectory/Third (master)
+$ git add hello.py
+
+Sai Krishna@PC-Saikrishna-1720 MINGW64 ~/Desktop/mydirectory/Third (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   hello.py
+
+
+Sai Krishna@PC-Saikrishna-1720 MINGW64 ~/Desktop/mydirectory/Third (master)
+$ git commit
+[master (root-commit) 3b3be71] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.py
+
+Sai Krishna@PC-Saikrishna-1720 MINGW64 ~/Desktop/mydirectory/Third (master)
+$ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working tree clean
+
+Sai Krishna@PC-Saikrishna-1720 MINGW64 ~/Desktop/mydirectory/Third (master)
+$ git remote -v
+origin  https://github.com/saikrishna-Terralogic/Third.git (fetch)
+origin  https://github.com/saikrishna-Terralogic/Third.git (push)
+
+Sai Krishna@PC-Saikrishna-1720 MINGW64 ~/Desktop/mydirectory/Third (master)
+$ git branch
+* master
+
+Sai Krishna@PC-Saikrishna-1720 MINGW64 ~/Desktop/mydirectory/Third (master)
+$ git push origin master
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 233 bytes | 233.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/saikrishna-Terralogic/Third.git
+ * [new branch]      master -> master
+
+Sai Krishna@PC-Saikrishna-1720 MINGW64 ~/Desktop/mydirectory/Third (master)
+$
